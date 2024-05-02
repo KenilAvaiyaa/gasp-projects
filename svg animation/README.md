@@ -5,7 +5,7 @@
 
 <h4>in this project i also use  <a href="https://gsap.com/docs/v3/GSAP/CorePlugins/Attributes/">GSAP Attributes
 </a> Internal Plugins : which allow us to easily tween any numeric attribute of a DOM element. 
-</br> ex:: <rect id="rect" fill="none" x="0" y="0" width="500" height="400"></rect>
+</br> ex:: " id="rect" fill="none" x="0" y="0" width="500" height="400" "
 </br> gsap.to("#rect", {
   duration: 1,
   // x here refers to the x attribute
