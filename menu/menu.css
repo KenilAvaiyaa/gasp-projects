@@ -1,0 +1,88 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+background-color: aliceblue;
+font-family: helvetica;
+overflow-x: hidden;
+}
+
+
+
+.mouse{
+    height: 25px;
+    width: 25px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    mix-blend-mode: difference; 
+}
+
+.home{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+nav{
+    height: 10%;
+    width: 100%;
+    /* background-color: aliceblue; */
+    padding: 2vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 2vw;
+}
+
+nav .icon{
+    position: relative;
+    background-color: rgb(215, 222, 222);
+    padding: 1.5vw;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.icon .web{
+    font-size: 1.5vw;
+}
+
+.web{
+    opacity: 1;
+    display: inline-block;
+}
+.cross{
+    opacity: 0;
+    display: none;
+}
+
+.menuelem{
+    height: 100%;
+    border-top-left-radius: 50% ;
+    border-bottom-left-radius: 50% ;
+    width: 40%;
+    background-color: #2F2F2F;
+    position: absolute;
+    top: 0;
+    right: -40%;
+    padding-top: 60vh;
+    padding-left: 5vw;
+    transition: transform 1s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.menuelem h4{
+    font-size: 4vw;
+    color: #ffffff;
+}
+
+.menuelem h4:hover{
+    color: #1C1D20;
+}
