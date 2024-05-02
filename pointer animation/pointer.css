@@ -15,21 +15,42 @@ background-color: #111;
     background-color: aliceblue;
     border-radius: 50%;
     position: fixed;
-    mix-blend-mode: difference;   
+    mix-blend-mode: difference; 
+    font-size: 5px;
+    display: flex;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
 }
 
 .home{
     height: 100vh;
     width: 100vw;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-.home img{
-    height: 50vh;
+.home .img{
+    height: 60vh;
     width: 70vw;
-    object-position:center;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
     object-fit: cover;
+}
+
+.over{
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
 }
