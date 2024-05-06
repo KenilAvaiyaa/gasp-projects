@@ -1,0 +1,48 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+font-family: helvetica;
+color: aliceblue;
+overflow: hidden;
+}
+
+.home,.intro{
+    background-color: aliceblue;
+}
+
+#moving-text {
+    margin-top: 40%;
+    overflow-x: auto;
+    white-space: nowrap;
+    color: rgb(57, 57, 57);
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.con {
+    white-space: nowrap;
+    display: inline-block;
+    transform: translateX(-200%);
+    animation: move 10s linear infinite;
+}
+
+#moving-text h1 {
+    font-size: 8vw;
+    display: inline-block;
+}
+
+#gola {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #FE320A;
+    margin: 1vw 2vw;
+}
