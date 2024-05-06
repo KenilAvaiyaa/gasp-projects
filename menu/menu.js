@@ -23,15 +23,15 @@ var tl = gsap.timeline();
       borderTopLeftRadius: 0,
       borderBottomLeftRadius: 0,
       duration: 1,
-    }),
+    },"same"),
     tl.from(".menuelem h4", {
       x: "100%",
       duration: 1,
       opacity: 0,
       stagger: {
-        amount: 0.5,
+        amount: 0.1,
       },
-    });
+    },"same");
 
 tl.pause()
 
